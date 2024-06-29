@@ -1,0 +1,65 @@
+a
+    text-decoration: none
+body
+    font-family: 'Gotham Pro' , 'sans-serif'
+.container
+    max-width: 1820px
+    margin: 0 auto
+.header
+    padding: 30px 0
+    &__wrapper
+        display: flex
+    &-catalog
+        &__body
+            display: none
+            &_active
+                display: block
+        &-wrapper
+            padding-left: 60px
+            padding-right: 30px
+            display: flex
+            flex-direction: column-reverse
+        &__btn
+            color: #fff
+            padding: 16px 55px
+            background-color: #1C69D4
+            border-radius: 5px
+            margin-top: 20px
+            display: flex
+            justify-content: center
+            &::before
+                content: ""
+                display: block
+                width: 22px
+                height: 15px
+                background-image: url("../../img/header/catalogo-btn-icon.svg")
+                margin-right: 15px
+    &__left
+        display: flex
+        align-items: center
+    &__right
+        display: flex
+        flex-direction: column
+        justify-content: center
+        width: 100%
+        &-top
+            display: flex
+            justify-content: space-between
+            padding-bottom: 18px
+            &__body a
+                padding-right: 40px
+        &-form__input
+            padding: 16px 13px
+            width: 98%
+    &-logo
+        max-width: 80px
+        max-height: 88px
+    &-acc a:first-child
+        padding-right: 20px
+    &-contact-link
+        white-space: nowrap
+        color: #222
+        &::after
+            content: ">"
+            display: inline-block
+            transform: rotate(90deg)
