@@ -99,7 +99,7 @@ body {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-image: url("../../img/header/log-in.svg");
+  background-image: url("../../../img/header/log-in.svg");
   margin-right: 10px;
 }
 .header-acc__shop-btn {
@@ -111,7 +111,7 @@ body {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-image: url("../../img/header/shop-card.svg");
+  background-image: url("../../../img/header/shop-card.svg");
   margin-right: 10px;
 }
 .header-contact-link {
