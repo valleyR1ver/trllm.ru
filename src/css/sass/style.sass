@@ -1,5 +1,6 @@
 a
     text-decoration: none
+    color:#000
 body
     font-family: 'Gotham Pro' , 'sans-serif'
 .container
@@ -19,12 +20,13 @@ body
             padding-right: 30px
             display: flex
             flex-direction: column-reverse
+            height: 100%
+            justify-content: space-between
         &__btn
             color: #fff
             padding: 16px 55px
             background-color: #1C69D4
             border-radius: 5px
-            margin-top: 20px
             display: flex
             justify-content: center
             &::before
@@ -34,29 +36,45 @@ body
                 height: 15px
                 background-image: url("../../img/header/catalogo-btn-icon.svg")
                 margin-right: 15px
-                
+    &-contact-link
+        font-size: 14px
+        color: #222
+    &__phone-number
+        font-size:  18px
+        font-weight: 500
+        color: #222
     &__left
         display: flex
         align-items: center
     &__right
         display: flex
         flex-direction: column
-        justify-content: center
+        justify-content: space-between
         width: 100%
+
         &-top
             display: flex
             justify-content: space-between
-            padding-bottom: 18px
-            &__body a
-                padding-right: 40px
+            &__body 
+                & a:not(:first-child)
+                    font-size: 15px
+                    font-weight: 400
+                    color: #222
+                & a
+                    padding-right: 40px
         &-form
             display: flex
             align-items: center
-            border: 1px solid #000
+            border: 1.5px solid #BBBBBB
+            border-radius: 5px
             &__input
                 padding: 16px 13px
                 width: 98%
                 border: none
+                &::placeholder
+                    font-size: 14px
+                    font-weight: 400
+                    color: #999
             &::before
                 content: ""
                 width: 24px
@@ -91,12 +109,32 @@ body
                 width: 24px
                 height: 24px
                 background-image: url("../../img/header/shop-card.svg")
+                background-size: cover
                 margin-right: 10px
-                
+        & a
+            font-weight: 400
+            font-size: 14px
+            color: #222
     &-contact-link
         white-space: nowrap
         color: #222
-        &::after
-            content: ">"
-            display: inline-block
-            transform: rotate(90deg)
+        & span
+            &::after
+                content: " "
+                height: 8px
+                width: 1px
+                background-color: #222
+                display: inline-block
+                transform: rotate(35deg)
+                position: relative
+                left: 3px
+                
+            &::before
+                content: " "
+                height: 8px
+                width: 1px
+                background-color: #222
+                display: inline-block
+                transform: rotate(-35deg)
+                margin-left: 10px
+                
