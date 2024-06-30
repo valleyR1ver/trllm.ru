@@ -64,16 +64,55 @@ body {
 .header__right-top__body a {
   padding-right: 40px;
 }
+.header__right-form {
+  display: flex;
+  align-items: center;
+  border: 1px solid #000;
+}
 .header__right-form__input {
   padding: 16px 13px;
   width: 98%;
+  border: none;
+}
+.header__right-form::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url("../../img/header/search-icon.svg");
+  position: relative;
+  left: 10px;
 }
 .header-logo {
   max-width: 80px;
   max-height: 88px;
 }
-.header-acc a:first-child {
+.header-acc {
+  display: flex;
+}
+.header-acc__submit-btn {
   padding-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.header-acc__submit-btn::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../img/header/log-in.svg");
+  margin-right: 10px;
+}
+.header-acc__shop-btn {
+  display: flex;
+  align-items: center;
+}
+.header-acc__shop-btn::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../img/header/shop-card.svg");
+  margin-right: 10px;
 }
 .header-contact-link {
   white-space: nowrap;
