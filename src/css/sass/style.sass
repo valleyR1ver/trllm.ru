@@ -48,14 +48,48 @@ body
             padding-bottom: 18px
             &__body a
                 padding-right: 40px
-        &-form__input
-            padding: 16px 13px
-            width: 98%
+        &-form
+            display: flex
+            align-items: center
+            border: 1px solid #000
+            &__input
+                padding: 16px 13px
+                width: 98%
+                border: none
+            &::before
+                content: ""
+                width: 24px
+                height: 24px
+                background-image: url("../../img/header/search-icon.svg")
+                position: relative
+                left: 10px
     &-logo
         max-width: 80px
         max-height: 88px
-    &-acc a:first-child
-        padding-right: 20px
+        
+    &-acc
+        display: flex
+        &__submit-btn
+            padding-right: 20px
+            display: flex
+            align-items: center
+            &::before
+                content: ""
+                display: inline-block
+                width: 24px
+                height: 24px
+                background-image: url("../../img/header/log-in.svg")
+                margin-right: 10px
+        &__shop-btn
+            display: flex
+            align-items: center
+            &::before
+                content: ""
+                display: inline-block
+                width: 24px
+                height: 24px
+                background-image: url("../../img/header/shop-card.svg")
+                margin-right: 10px
     &-contact-link
         white-space: nowrap
         color: #222
