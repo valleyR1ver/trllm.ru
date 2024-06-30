@@ -1,5 +1,6 @@
 a {
   text-decoration: none;
+  color: #000;
 }
 
 body {
@@ -28,13 +29,14 @@ body {
   padding-right: 30px;
   display: flex;
   flex-direction: column-reverse;
+  height: 100%;
+  justify-content: space-between;
 }
 .header-catalog__btn {
   color: #fff;
   padding: 16px 55px;
   background-color: #1C69D4;
   border-radius: 5px;
-  margin-top: 20px;
   display: flex;
   justify-content: center;
 }
@@ -46,6 +48,15 @@ body {
   background-image: url("../../img/header/catalogo-btn-icon.svg");
   margin-right: 15px;
 }
+.header-contact-link {
+  font-size: 14px;
+  color: #222;
+}
+.header__phone-number {
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+}
 .header__left {
   display: flex;
   align-items: center;
@@ -53,13 +64,17 @@ body {
 .header__right {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
 }
 .header__right-top {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 18px;
+}
+.header__right-top__body a:not(:first-child) {
+  font-size: 15px;
+  font-weight: 400;
+  color: #222;
 }
 .header__right-top__body a {
   padding-right: 40px;
@@ -67,12 +82,23 @@ body {
 .header__right-form {
   display: flex;
   align-items: center;
-  border: 1px solid #000;
+  border: 1.5px solid #BBBBBB;
+  border-radius: 5px;
 }
 .header__right-form__input {
   padding: 16px 13px;
   width: 98%;
   border: none;
+}
+.header__right-form__input::-moz-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: #999;
+}
+.header__right-form__input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: #999;
 }
 .header__right-form::before {
   content: "";
@@ -113,14 +139,34 @@ body {
   width: 24px;
   height: 24px;
   background-image: url("../../img/header/shop-card.svg");
+  background-size: cover;
   margin-right: 10px;
+}
+.header-acc a {
+  font-weight: 400;
+  font-size: 14px;
+  color: #222;
 }
 .header-contact-link {
   white-space: nowrap;
   color: #222;
 }
-.header-contact-link::after {
-  content: ">";
+.header-contact-link span::after {
+  content: " ";
+  height: 8px;
+  width: 1px;
+  background-color: #222;
   display: inline-block;
-  transform: rotate(90deg);
+  transform: rotate(35deg);
+  position: relative;
+  left: 3px;
+}
+.header-contact-link span::before {
+  content: " ";
+  height: 8px;
+  width: 1px;
+  background-color: #222;
+  display: inline-block;
+  transform: rotate(-35deg);
+  margin-left: 10px;
 }/*# sourceMappingURL=style.css.map */
