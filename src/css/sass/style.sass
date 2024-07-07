@@ -21,33 +21,36 @@ body
     padding: 30px 0
     &__wrapper
         display: flex
-    &-catalog
+    &-catalog-wrapper
         display: none
         position: relative
         background-color: #fff
         z-index: 500
-        padding: 20px
-        border-radius: 5px
+        
         &_active
             display: flex
             justify-content: space-between
             flex-basis: 25%
             padding-top: 20px
-            
+    &-catalog
+        background: white
+        position: relative
+        z-index: 1   
         &__items
             display: flex
             align-items: center
         &__column:not(:last-child) li span::after
             content: "ВСЕ"
             padding-left: 10px
-            color: blue
+            color: #1C69D4
             padding: 5px
-            border: 1px solid blue
+            border: 1px solid #1C69D4
             border-radius: 5px
             margin-left: 10px
         &__column:last-child
             display: flex
             flex-direction: column
+            
         &__items
             margin: 0
             padding: 0
@@ -67,6 +70,7 @@ body
             border-radius: 5px
             display: flex
             justify-content: center
+            font-weight: 700
             &::before
                 content: ""
                 display: block
@@ -83,10 +87,13 @@ body
             border-radius: 5px
         &__item
             margin: 0
-            padding: 0
+            padding: 20px 0px
             list-style-type: none
+            
             & li 
                 padding-bottom: 10px
+                &:first-child
+                    padding-bottom: 20px
                 & a
                     color: #1C69D4
                     font-size: 13px
@@ -94,6 +101,7 @@ body
             &-heading
                 font-size: 14px
                 font-weight: 700
+                
     &-contact-link
         font-size: 14px
         color: #222
@@ -196,7 +204,7 @@ body
     padding-top: 20px
 .header-catalog__btn_active
     background-color: #fff
-    color: blue
+    color: #000
     z-index: 999
     border-bottom-left-radius: 0px
     border-bottom-right-radius: 0px
