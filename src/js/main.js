@@ -13,6 +13,7 @@ document.querySelector("body").addEventListener('click', (event)=>{
         headerCatalogBtn.classList.toggle("header-catalog__btn_active")
         headerCatalogBody.classList.toggle("header-catalog-wrapper_active")
         document.querySelector("body").classList.toggle("body_active")
+        
     }
 })
 
