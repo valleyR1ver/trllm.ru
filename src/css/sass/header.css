@@ -1,33 +1,4 @@
 @charset "UTF-8";
-*:focus {
-  outline: none;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-body {
-  font-family: "Gotham Pro", "sans-serif";
-}
-
-.body_active::after {
-  content: "";
-  background-color: black;
-  opacity: 0.5;
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-}
-
-.container {
-  max-width: 1820px;
-  margin: 0 auto;
-}
-
 .header {
   padding: 30px 0;
 }
@@ -264,4 +235,4 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   align-self: center;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=header.css.map */
